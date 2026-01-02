@@ -198,7 +198,13 @@ header {
   color: var(--muted);
 }
 
-.filter-group label input[type="checkbox"] {
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-option input[type="checkbox"] {
   margin: 0;
 }
 
