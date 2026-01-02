@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeVoyage - Hotels</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="hotels">
+    <header>
+      <div class="container nav">
+        <div class="logo">✨ AnimeVoyage</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a class="active" href="hotels.html">Hotels</a>
+          <a href="flights.html">Flights</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Hotels that feel like a serene anime retreat.</h1>
+          <p>
+            Filter by price, amenities, and atmosphere to book a stay worthy of your
+            next adventure arc.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Travel goals</h3>
+          <div class="list">
+            <span>✨ Private onsen experiences</span>
+            <span>🌸 Sakura-view terraces</span>
+            <span>🛌 Luxe futons with tea service</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="search-panel">
+          <div>
+            <label for="search">Search by city or hotel</label>
+            <input id="search" type="text" placeholder="Try Kyoto, spa, skyline" />
+          </div>
+          <div class="filters">
+            <div class="filter-group">
+              <label>Price range</label>
+              <select data-filter="price">
+                <option value="">All</option>
+                <option value="0">Under $200</option>
+                <option value="1">$200 - $250</option>
+                <option value="2">$250+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Amenities</label>
+              <label><input type="checkbox" name="amenities" value="onsen" /> Onsen</label>
+              <label><input type="checkbox" name="amenities" value="spa" /> Spa</label>
+              <label><input type="checkbox" name="amenities" value="wifi" /> Wi-Fi</label>
+            </div>
+            <div class="filter-group">
+              <label>Stay mood</label>
+              <label><input type="checkbox" name="amenities" value="rooftop" /> Rooftop</label>
+              <label><input type="checkbox" name="amenities" value="garden" /> Garden</label>
+              <label><input type="checkbox" name="amenities" value="koi" /> Koi pond</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="results-header">
+          <h2 class="section-title">Available stays</h2>
+          <span id="results-count">0 experiences found</span>
+        </div>
+        <div class="results-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Book your stay and earn anime adventure points.</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
