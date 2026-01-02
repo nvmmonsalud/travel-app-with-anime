@@ -195,6 +195,16 @@ header {
   color: var(--muted);
 }
 
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-option input[type="checkbox"] {
+  margin: 0;
+}
+
 .results-header {
   display: flex;
   align-items: center;
