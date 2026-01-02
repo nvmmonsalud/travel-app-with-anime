@@ -191,8 +191,15 @@ header {
 }
 
 .filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.85rem;
   color: var(--muted);
+}
+
+.filter-group label input[type="checkbox"] {
+  margin: 0;
 }
 
 .results-header {
