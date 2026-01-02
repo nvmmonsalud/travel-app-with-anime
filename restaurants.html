@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeVoyage - Restaurants</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="restaurants">
+    <header>
+      <div class="container nav">
+        <div class="logo">✨ AnimeVoyage</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="hotels.html">Hotels</a>
+          <a href="flights.html">Flights</a>
+          <a class="active" href="restaurants.html">Restaurants</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Dine at restaurants curated for anime adventurers.</h1>
+          <p>
+            Filter by cuisine and price to unlock immersive dining experiences.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Dining quests</h3>
+          <div class="list">
+            <span>🍜 Ramen constellation tastings</span>
+            <span>🍣 Omakase anime stages</span>
+            <span>🫖 Artisan tea pairings</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="search-panel">
+          <div>
+            <label for="search">Search by cuisine or city</label>
+            <input id="search" type="text" placeholder="Try sushi, Osaka" />
+          </div>
+          <div class="filters">
+            <div class="filter-group">
+              <label>Price range</label>
+              <select data-filter="price">
+                <option value="">All</option>
+                <option value="0">Under $30</option>
+                <option value="1">$30 - $45</option>
+                <option value="2">$45+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Cuisine</label>
+              <label><input type="radio" name="cuisine" value="ramen" /> Ramen</label>
+              <label><input type="radio" name="cuisine" value="sushi" /> Sushi</label>
+              <label><input type="radio" name="cuisine" value="bento" /> Bento</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="results-header">
+          <h2 class="section-title">Available dining experiences</h2>
+          <span id="results-count">0 experiences found</span>
+        </div>
+        <div class="results-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Reserve now and earn tasting badges.</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

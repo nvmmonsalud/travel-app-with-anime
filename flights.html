@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeVoyage - Flights</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="flights">
+    <header>
+      <div class="container nav">
+        <div class="logo">✨ AnimeVoyage</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="hotels.html">Hotels</a>
+          <a class="active" href="flights.html">Flights</a>
+          <a href="restaurants.html">Restaurants</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Flights with cinematic lounges and anime-tailored comfort.</h1>
+          <p>
+            Pick your cabin class and number of stops to craft the perfect journey.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Perks on every flight</h3>
+          <div class="list">
+            <span>🎧 Exclusive anime soundtracks</span>
+            <span>🍱 Bento tasting flights</span>
+            <span>🛫 Fast-track boarding quests</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="search-panel">
+          <div>
+            <label for="search">Search by route or airline</label>
+            <input id="search" type="text" placeholder="Try LAX → NRT, MangaJet" />
+          </div>
+          <div class="filters">
+            <div class="filter-group">
+              <label>Price range</label>
+              <select data-filter="price">
+                <option value="">All</option>
+                <option value="0">Under $700</option>
+                <option value="1">$700 - $850</option>
+                <option value="2">$850+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Stops</label>
+              <label><input type="radio" name="stops" value="nonstop" /> Nonstop</label>
+              <label><input type="radio" name="stops" value="1 stop" /> 1 stop</label>
+              <label><input type="radio" name="stops" value="2+ stops" /> 2+ stops</label>
+            </div>
+            <div class="filter-group">
+              <label>Cabin class</label>
+              <label><input type="radio" name="cabin" value="economy" /> Economy</label>
+              <label><input type="radio" name="cabin" value="premium" /> Premium</label>
+              <label><input type="radio" name="cabin" value="business" /> Business</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="results-header">
+          <h2 class="section-title">Recommended flights</h2>
+          <span id="results-count">0 experiences found</span>
+        </div>
+        <div class="results-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Earn bonus points for premium cabins this week.</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
