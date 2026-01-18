@@ -57,9 +57,12 @@ export default function App() {
         </p>
         <div className="actions">
           <button type="button">Start a new trip</button>
-          <button type="button" className="secondary">
+          <button type="button" className="button secondary">
             Explore templates
           </button>
+          <a href="/prototype/index.html" className="button secondary">
+            View Prototype
+          </a>
         </div>
       </header>
       <section className="grid" aria-label="Featured destinations">
